@@ -1,0 +1,16 @@
+.btn-block {
+    background-color: gray;
+
+    padding: 10px;
+}
+button {
+    background-color: orange;
+    height: 20px;
+    width: 30px;
+}
+.blue {
+    background-color: aqua;
+}
+.coral {
+    background-color: coral;
+}
