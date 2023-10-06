@@ -18,5 +18,29 @@ for(let elem in someArr) {
 const someElement = document.createElement('div')
 someElement.classList.add('test-class')
 document.body.append(someElement)
+// - - - - - - - - - - - - - - - - -
+
+const wrapper = document.querySelector('.btn-block')
+
+
+const btns = document.querySelectorAll('button')
+// console.log(btns[0].classList.toggle('red'));
+btns[0].addEventListener('click', () => {
+
+    // аналог toggle
+    // if(!btns.classList.contains('red')) {
+    //     btns[1].classList.add('red')
+    // } else {
+    //     btns[1].classList.remove('red')
+    // }
+    
+    btns[1].classList.toggle('red')
+})
+// делигирование событий
+wrapper.addEventListener('click', (event) => {
+    if (event.target && event.target.tagName == "BUTTON") {
+        console.log('Test');
+    }
+})
 
 
