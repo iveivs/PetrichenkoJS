@@ -1,2 +1,2 @@
-let str ='asdfgggh'
-console.log(str.slice(0,4));
+let a = new Date('2023-10-07')
+console.log();
